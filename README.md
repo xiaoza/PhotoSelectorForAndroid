@@ -1,1 +1,4 @@
-# XiangPhotoSelect
+# PhotoSelectorForAndroid
+
+---
+
