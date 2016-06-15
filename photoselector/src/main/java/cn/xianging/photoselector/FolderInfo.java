@@ -2,7 +2,7 @@ package cn.xianging.photoselector;
 
 /**
  * Created by xiaoz on 16/3/28.
- * Copyright © 2016年 unfae. All rights reserved.
+ * Copyright © 2016年 xianging. All rights reserved.
  */
 public class FolderInfo {
     static final String FOLDER_NAME_ALL = "所有图片";

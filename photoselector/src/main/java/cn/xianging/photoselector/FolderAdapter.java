@@ -12,7 +12,7 @@ import java.util.List;
 
 /**
  * Created by xiaoz on 16/3/28.
- * Copyright © 2016年 unfae. All rights reserved.
+ * Copyright © 2016年 xianging. All rights reserved.
  */
 public class FolderAdapter extends BaseAdapter {
 

@@ -14,7 +14,7 @@ import java.util.Map;
 
 /**
  * Created by xiaoz on 16/6/7.
- * Copyright © 2016年 unfae. All rights reserved.
+ * Copyright © 2016年 xianging. All rights reserved.
  */
 public class PhotoSelectorFragmentDelegate {
     private PhotoSelectorFragment mFragment;

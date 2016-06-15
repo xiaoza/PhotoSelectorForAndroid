@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 
 /**
  * Created by xiaoz on 16/3/29.
- * Copyright © 2016年 unfae. All rights reserved.
+ * Copyright © 2016年 xianging. All rights reserved.
  */
 public class PhotoAllAdapter extends PhotoAdapter {
 
