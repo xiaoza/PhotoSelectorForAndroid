@@ -21,8 +21,8 @@
 
             <ImageView
                 android:id="@+id/folder_icon"
-                android:layout_width="@dimen/pickimage_size"
-                android:layout_height="@dimen/pickimage_size"
+                android:layout_width="@dimen/foldericon_size"
+                android:layout_height="@dimen/foldericon_size"
                 android:scaleType="centerCrop"/>
 
         </FrameLayout>

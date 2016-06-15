@@ -48,8 +48,6 @@ public class PhotoSelectorFragment extends Fragment implements
     static final int RESULT_CAMERA = 0x110;
     static final int RESULT_PICK = 0x111;
 
-
-
     private PhotoSelectorFragmentDelegate delegate;
 
     GridView.OnItemClickListener mOnPhotoItemClick = new AdapterView.OnItemClickListener() {
@@ -89,8 +87,8 @@ public class PhotoSelectorFragment extends Fragment implements
     private PhotoAdapter mPhotoAdapter;
 
     private Uri photoUriForCamera;
-    private ImageLoader mImageLoader;
 
+    private ImageLoader mImageLoader;
     private OnPhotoSelectedListener mPhotoSelectedListener;
     private OnPhotoTakenListener mPhotoTakenListener;
 
@@ -100,6 +98,14 @@ public class PhotoSelectorFragment extends Fragment implements
 
     public void setPhotoTakenListener(OnPhotoTakenListener photoTakenListener) {
         mPhotoTakenListener = photoTakenListener;
+    }
+
+    public void setImageLoader(ImageLoader imageLoader) {
+        mImageLoader = imageLoader;
+    }
+
+    public ImageLoader getImageLoader() {
+        return mImageLoader;
     }
 
     public static PhotoSelectorFragment newInstance(int maxPick, ArrayList<PhotoInfo> pickedPhotos) {
@@ -268,7 +274,7 @@ public class PhotoSelectorFragment extends Fragment implements
         if (isShowAllPhotos()) {
             mPhotoAdapter = new AllPhotoAdapter(getContext(), data, false, this);
         } else {
-            mPhotoAdapter = new PhotoAdapter(getContext(), data, false, this, mImageLoader);
+            mPhotoAdapter = new PhotoAdapter(getContext(), data, false, this);
         }
         mPhotoAdapter.setPhotoItemPickedListener(this);
         mPhotoGridView.setAdapter(mPhotoAdapter);

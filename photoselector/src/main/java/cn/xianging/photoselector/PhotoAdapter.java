@@ -25,11 +25,11 @@ public class PhotoAdapter extends CursorAdapter implements View.OnClickListener 
         mItemPickedListener = itemPickedListener;
     }
 
-    public PhotoAdapter(Context context, Cursor c, boolean autoRequery, PhotoSelectorFragment fragment, ImageLoader imageLoader) {
+    public PhotoAdapter(Context context, Cursor c, boolean autoRequery, PhotoSelectorFragment fragment) {
         super(context, c, autoRequery);
 
         mPhotoSelectorFragment = fragment;
-        mImageLoader = imageLoader;
+        mImageLoader = fragment.getImageLoader();
 
         float windowWidth = context.getResources().getDisplayMetrics().widthPixels;
         int spaceInPix = context.getResources().getDimensionPixelSize(R.dimen.photo_space);
