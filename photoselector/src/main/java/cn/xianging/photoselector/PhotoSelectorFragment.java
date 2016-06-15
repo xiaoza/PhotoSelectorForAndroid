@@ -272,7 +272,7 @@ public class PhotoSelectorFragment extends Fragment implements
     @Override
     public void onLoadFinished(Loader<Cursor> loader, Cursor data) {
         if (isShowAllPhotos()) {
-            mPhotoAdapter = new AllPhotoAdapter(getContext(), data, false, this);
+            mPhotoAdapter = new PhotoAllAdapter(getContext(), data, false, this);
         } else {
             mPhotoAdapter = new PhotoAdapter(getContext(), data, false, this);
         }

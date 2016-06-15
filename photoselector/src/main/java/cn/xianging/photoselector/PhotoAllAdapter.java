@@ -9,9 +9,9 @@ import android.view.ViewGroup;
  * Created by xiaoz on 16/3/29.
  * Copyright © 2016年 unfae. All rights reserved.
  */
-public class AllPhotoAdapter extends PhotoAdapter {
+public class PhotoAllAdapter extends PhotoAdapter {
 
-    public AllPhotoAdapter(Context context, Cursor c, boolean autoRequery, PhotoSelectorFragment fragment) {
+    public PhotoAllAdapter(Context context, Cursor c, boolean autoRequery, PhotoSelectorFragment fragment) {
         super(context, c, autoRequery, fragment);
     }
 

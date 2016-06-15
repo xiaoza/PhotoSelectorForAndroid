@@ -1,6 +1,5 @@
 package cn.xianging.photoselector;
 
-import java.io.File;
 import java.io.Serializable;
 
 /**
@@ -8,7 +7,6 @@ import java.io.Serializable;
  * Copyright © 2016年 unfae. All rights reserved.
  */
 public class PhotoInfo implements Serializable {
-    private static final String PREFIX = "file://";
 
     private long photoId;
     private String path;
@@ -16,21 +14,7 @@ public class PhotoInfo implements Serializable {
     private int height;
 
     public PhotoInfo(String path) {
-        this.path = pathAddPrefix(path);
-    }
-
-    /** static methods */
-
-    public static String pathAddPrefix(String path) {
-        return path.startsWith(PREFIX) ? path : PREFIX + path;
-    }
-
-    public static boolean isLocalFile(String path) {
-        return path.startsWith(PREFIX);
-    }
-
-    public static File getLocalFile(String path) {
-        return isLocalFile(path) ? new File(path.substring(PREFIX.length())) : new File(path);
+        this.path = path;
     }
 
     /** setter and getter */
